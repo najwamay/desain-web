@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        table tr td:first-child {
+            width: 200px;
+        }
+
+        table tr td input {
+            width: 350px;
+        }
+
+        table tr td input[type="date"] {
+            width: 353px;
+        }
+
+        table tr td textarea {
+            resize: none;
+        }
+
+        table {
+            border: 2px dashed black;
+        }
+
+        table tr td button[type="submit"] {
+            width: 563px;
+        }
+
+        .form-login {
+            width: 100%;
+            /* background-color: red; */
+            margin: 0 auto;
+        }
+
+        .form-login img {
+            width: 200px;
+            position: relative;
+            left: 750px;
+        }
+
+        .form-login table {
+            margin: auto;
+        }
+
+        .form-login h2 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="form-login">
+        <header>
+            <h2>Form Pendaftaran Anggota Bajak Laut</h2>
+        </header>
+        <img src="" alt="">
+        <main>
+            <form action="response.html" target="_self" method="post" enctype="multipart/form-data"
+                name="pendaftaran-anggota-bajak-laut">
+                <table>
+                    <tr>
+                        <td><label for="input-fullname">Nama Lengkap</label></td>
+                        <td><input type="text" name="input-fullname" id="input-fullname" required
+                                aria-label="Kolom nama lengkap"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input-username">Username</label></td>
+                        <td><input type="text" name="input-username" id="input-username" required
+                                aria-label="Kolom username"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input-password">Password</label></td>
+                        <td><input type="password" name="input-password" id="input-password" required
+                                aria-label="Kolom password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input-tanggallahir">Tanggal Lahir</label></td>
+                        <td><input type="date" name="input-tanggallahir" id="input-tanggallahir" value="2023-08-03"
+                                aria-label="Kolom tanggal lahir"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Alamat">Alamat</label></td>
+                        <td><textarea name="alamat" id="alamat" cols="46" rows="2" aria-label="Kolom alamat"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="input-avatar">Avatar</label></td>
+                        <td><input type="file" name="input-avatar" id="input-avatar" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" role="button" aria-label="Tombol daftar">Daftar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
